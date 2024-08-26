@@ -1,0 +1,27 @@
+GraphQL is a query language for APIs, as well as a runtime for executing those queries by using a type system that you define for your data. Unlike REST, where you have multiple endpoints that return fixed data structures, GraphQL allows you to request exactly the data you need from a single endpoint.
+
+Why is Apollo Server Required?
+Apollo Server is a popular open-source implementation of a GraphQL server. It's designed to handle HTTP requests that contain GraphQL queries, parse these queries, execute them against your data sources, and then return the results.
+
+Why You Need Apollo Server:
+Schema Definition: Apollo Server helps you define your GraphQL schema, which is the backbone of your API. The schema includes types, queries, mutations, and subscriptions.
+Query Execution: It parses and executes the GraphQL queries received from the client. Apollo Server efficiently resolves the queries by accessing the underlying data sources.
+Middleware Integration: Apollo Server can be integrated with other Node.js frameworks like Express, Koa, or Hapi. This allows you to add middleware for tasks such as authentication, logging, or error handling.
+Tools and Features: Apollo Server comes with useful tools such as Apollo Studio, a web interface for exploring and testing your API. It also provides features like caching, performance monitoring, and more.
+Subscriptions: Apollo Server supports GraphQL subscriptions out of the box, allowing you to easily set up real-time communication.
+
+GraphQL itself is just a specification or a set of rules for how a query language should work. It defines how queries should be structured, how the schema should be defined, and how the data should be returned.
+Query Execution: GraphQL specifies how queries should be executed, but it doesn't actually execute them. The actual execution of queries against data sources is done by a GraphQL server implementation.
+Middleware and Tools: Apollo Server also offers a lot of additional features like middleware support, performance monitoring, caching, and more.
+
+
+Command line 
+
+yarn init 
+yarn add express cors body-parser 
+yarn add @apollo/server graphql
+
+
+//client side fetching with react 
+yarn create react-app .
+yarn add @apollo/client graphql
